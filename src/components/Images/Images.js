@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Image from './Image'
+import $ from 'jquery'
 
 class Images extends Component {
 
@@ -8,19 +9,18 @@ class Images extends Component {
 
   }
 
+
+
   componentWillMount() {
-    const url = 'https://api.instagram.com/v1/users/3017821590/media/recent?access_token=3017821590.1677ed0.21c3cbc98fc1494e822ae09f6009a3ac'
-    var headers = { method: 'GET',
-               mode: 'no-cors',
-               cache: 'default'}
-    fetch(url, headers)
-      .then((response) => {
-        console.log("got response")
-        console.log(JSON.parse(response))
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+    $.ajax({
+      url: 'https://api.instagram.com/v1/users/3017821590/media/recent?access_token=3017821590.1677ed0.21c3cbc98fc1494e822ae09f6009a3ac',
+      type: "GET",
+      crossDomain: true,
+      dataType: "jsonp",
+      success: (data) => {
+        console.log(data.data)
+      }
+    })
 
   }
 
