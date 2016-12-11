@@ -40,7 +40,6 @@ class Images extends Component {
 
     return (
       <div className="images">
-        <h2>Images</h2>
         <div className="image-grid">
           {images}
         </div>
