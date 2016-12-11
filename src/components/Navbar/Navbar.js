@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 
 class Navbar extends Component {
   render() {
@@ -13,7 +13,7 @@ class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">Skilmaker Sjøblom</a>
+            <Link className="navbar-brand" to="/">Skilmaker Sjøblom</Link>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
