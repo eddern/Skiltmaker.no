@@ -15,8 +15,6 @@ class Images extends Component {
     }
   }
 
-
-
   componentWillMount() {
     moment.lang('nb')
     this.setState({

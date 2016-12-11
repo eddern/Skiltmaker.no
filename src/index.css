@@ -1,4 +1,4 @@
-.image-grid{
+.image-grid>div{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -29,7 +29,7 @@
 
 @media (min-width: 720px) {
   .image-grid {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
