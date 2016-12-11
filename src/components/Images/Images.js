@@ -34,10 +34,6 @@ class Images extends Component {
     }
   }
 
-  loadMoreImages(){
-    this.loadImages()
-  }
-
   render() {
     var images = []
     for (var i = 0; i < this.state.images.length; i++) {
@@ -49,7 +45,7 @@ class Images extends Component {
         <div className="image-grid">
           <InfiniteScroll
             pageStart={0}
-            loadMore={this.loadMoreImages.bind(this)}
+            loadMore={this.loadImages.bind(this)}
             hasMore={this.state.hasMoreImages}>
             {images}
           </InfiniteScroll>
