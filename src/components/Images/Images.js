@@ -29,10 +29,6 @@ class Images extends Component {
     })
   }
 
-  componentWillMount() {
-    this.loadImages()
-  }
-
   loadMoreImages(){
     this.loadImages()
   }
