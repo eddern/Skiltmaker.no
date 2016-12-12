@@ -91,7 +91,7 @@ footer{
   position:absolute;
   width: 100%;
   bottom: 0;
-  padding: 20px;
+  padding: 10px;
   background-color: #FFF;
 }
 .footer-content{
@@ -167,6 +167,7 @@ footer{
 .home-text {
   margin-left: 5px;
   margin-right: 5px;
+  padding-bottom: 70px;
 }
 
 .home-text > h1 {
