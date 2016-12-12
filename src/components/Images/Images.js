@@ -46,7 +46,8 @@ class Images extends Component {
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadImages.bind(this)}
-            hasMore={this.state.hasMoreImages}>
+            hasMore={this.state.hasMoreImages}
+            threshold={300}>
             {images}
           </InfiniteScroll>
         </div>
