@@ -10,7 +10,7 @@ const Routes = (props) => (
   <Router {...props}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
-      <Route path="bilder" component={Images}/>
+      <Route path="galleri" component={Images}/>
       <Route path="kontakt" component={Contact}/>
     </Route>
   </Router>

@@ -21,7 +21,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
               <li className={location.pathname == '/' ? 'active' : ''}><Link to="/">Hjem</Link></li>
-              <li className={location.pathname == '/bilder' ? 'active' : ''}><Link to="/bilder">Galleri</Link></li>
+              <li className={location.pathname == '/galleri' ? 'active' : ''}><Link to="/galleri">Galleri</Link></li>
               <li className={location.pathname == '/kontakt' ? 'active' : ''}><Link to="/kontakt">Kontakt</Link></li>
             </ul>
           </div>
