@@ -76,6 +76,32 @@ body {
   margin-bottom: -10px;
 }
 
+/*
+      HOME PAGE
+*/
+
+.home-text {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.home-text > h1 {
+  font-size: 400%;
+}
+
+.home-text > h2 {
+  margin-top: -30px;
+}
+
+.home-text > p {
+  margin-top: 30px;
+}
+
+
+
+/*
+      MEDIA QUERIES
+*/
 
 @media (min-width: 720px) {
   .image-grid {
