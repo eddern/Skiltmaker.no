@@ -1,9 +1,27 @@
+/*
+    GENERAL
+*/
+#root{
+  min-height: 100%;
+  position: relative;
+  height:auto !important;
+  height:100%;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+
+/*
+    GALLERI
+*/
 .image-grid>div{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .image {
   position: relative;
   margin: 0.5rem 0 1rem 0;
@@ -15,16 +33,27 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-
 .image img {
   width: 320px;
-  background-image: url("../public/rolling.svg");
 }
+.image:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.image .time{
+  color: #888;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.images{
+  padding-bottom: 70px;
+}
+
 
 /*
     CAROUSEL
 */
-
 .slider  {
   display: none !important;
 }
@@ -43,18 +72,32 @@
   height: 460px !important;
 }
 
-
-.image:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+/*
+    FOOTER
+*/
+footer{
+  position:absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #FFF;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
 }
 
-.image .time{
-  color: #888;
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
+.fa-github{
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
+
+
+/*
+    CONTACT
+*/
 .contact {
   display: flex;
   flex-wrap: wrap;

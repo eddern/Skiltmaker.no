@@ -3,7 +3,14 @@ import React, { Component } from 'react'
 class Footer extends Component{
   render(){
     return(
-      <div>Swag</div>
+      <footer>
+        <div className="footer-content">
+          <div><i className="fa fa-copyright" aria-hidden="true"></i> Skiltmaker Sjøblom, alle rettigheter reservert.</div>
+          <div>
+            Nettsiden er laget av <a href="https://www.espenmeidell.no">Espen Meidell</a> og <a href="https://www.eddern.no">Edvard Schreiner Sjøblom</a>.
+             <a href="https://github.com/eddern/Skiltmaker.no"><i className="fa fa-pull-right fa-2x fa-github" aria-hidden="true"></i></a></div>
+        </div>
+      </footer>
     )
   }
 }
