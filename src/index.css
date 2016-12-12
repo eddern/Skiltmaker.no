@@ -13,6 +13,9 @@ html,body {
 	height:100%;
 }
 
+body {
+  background-color: #f5f5f5;
+}
 
 /*
     GALLERI
@@ -86,6 +89,7 @@ footer{
 .footer-content{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .fa-github{
@@ -110,9 +114,6 @@ footer{
 
 
 
-body {
-  background-color: #f5f5f5;
-}
 
 /*
       NAVBAR
