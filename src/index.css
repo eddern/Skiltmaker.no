@@ -121,7 +121,7 @@ footer{
 
 
 .contact > table {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .contact > table  td {
@@ -202,5 +202,8 @@ footer{
   .logo {
     margin: 5px;
     height: 70px;
+  }
+  .contact > table {
+    font-size: 2em;
   }
 }
