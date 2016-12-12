@@ -113,14 +113,22 @@ footer{
 */
 .contact {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-.contact_info {
-  font-size: 150%;
+.contact  h1 {
+  font-size: 140%;
 }
 
+
+.contact > table {
+  font-size: 3em;
+}
+
+.contact > table  td {
+  padding: 20px;
+  padding-top: 0px;
+}
 
 
 
