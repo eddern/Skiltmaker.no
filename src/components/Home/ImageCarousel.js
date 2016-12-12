@@ -9,6 +9,10 @@ import liteskilt from './slideshow/liteskilt.jpg'
 import lys from './slideshow/lys.jpg'
 
 
+/*
+TODO: Legg til text på bilder
+TODO: Fixe størrelsen med 3 bilder problemet
+*/
 class ImageCarousel extends Component {
   mixins: [Carousel.ControllerMixin]
   render(){

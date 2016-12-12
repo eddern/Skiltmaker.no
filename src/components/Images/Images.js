@@ -3,6 +3,9 @@ import Image from './Image'
 import $ from 'jquery'
 import InfiniteScroll from "react-infinite-scroller"
 
+/*
+TODO: Legg til placeholder bilde
+*/
 class Images extends Component {
 
   constructor() {
