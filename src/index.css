@@ -50,6 +50,15 @@ html,body {
   padding-bottom: 70px;
 }
 
+.up-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+}
+.up-to-top:hover {
+  cursor: pointer;
+}
+
 
 /*
     CAROUSEL

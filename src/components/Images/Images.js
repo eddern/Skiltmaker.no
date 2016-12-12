@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Image from './Image'
 import $ from 'jquery'
 import InfiniteScroll from "react-infinite-scroller"
+import Scroll from 'react-scroll'
 
 /*
 TODO: Legg til placeholder bilde
@@ -37,6 +38,11 @@ class Images extends Component {
     }
   }
 
+  toTop() {
+    Scroll.animateScroll.scrollToTop()
+  }
+
+
   render() {
     var images = []
     for (var i = 0; i < this.state.images.length; i++) {
@@ -54,6 +60,7 @@ class Images extends Component {
             {images}
           </InfiniteScroll>
         </div>
+        <i className="fa fa-3x fa-chevron-up up-to-top" aria-hidden="true" onClick={this.toTop.bind(this)}></i>
       </div>
     );
   }
