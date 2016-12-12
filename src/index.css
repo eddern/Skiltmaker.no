@@ -20,6 +20,14 @@
   width: 320px;
 }
 
+/*
+    CAROUSEL
+*/
+
+.slider  {
+  display: none !important;
+}
+
 .carousel-btn{
   background-color: rgba(0,0,0,0.5);
   border: none;
@@ -56,10 +64,7 @@
   font-size: 150%;
 }
 
-.logo {
-  margin: 5px;
-  height: 70px;
-}
+
 
 body {
   background-color: #f5f5f5;
@@ -92,13 +97,17 @@ body {
   color: #AE2310 !important;
 }
 
+.logo {
+  margin: 5px;
+  height: 30px;
+}
+
 /*
       HOME PAGE
 */
-
 .home-text {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .home-text > h1 {
@@ -111,6 +120,7 @@ body {
 
 .home-text > p {
   margin-top: 30px;
+  font-size: 110%;
 }
 
 
@@ -123,5 +133,16 @@ body {
   .image-grid {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .home-text {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .slider {
+    display: block !important;
+  }
+  .logo {
+    margin: 5px;
+    height: 70px;
   }
 }
