@@ -16,7 +16,7 @@ class Images extends Component {
   }
 
   componentWillMount() {
-    moment.lang('nb')
+    moment.locale('nb')
     this.setState({
       url:this.state.data.images.low_resolution.url,
       bigurl: this.state.data.images.standard_resolution.url,
