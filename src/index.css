@@ -56,6 +56,26 @@
   font-size: 150%;
 }
 
+.logo {
+  margin: 5px;
+  height: 70px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.navbar  a {
+  font-size: 150%;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
 
 @media (min-width: 720px) {
   .image-grid {

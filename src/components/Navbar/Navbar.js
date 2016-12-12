@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from "react-router";
+import { Link } from "react-router"
+import Logo from './logo.png'
 
 class Navbar extends Component {
   render() {
@@ -13,7 +14,7 @@ class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link className="navbar-brand" to="/">Skilmaker Sjøblom</Link>
+            <img className="logo" src={Logo} />
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
