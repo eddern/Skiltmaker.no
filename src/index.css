@@ -27,6 +27,17 @@
   right: 20px;
 }
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact_info {
+  font-size: 150%;
+}
+
+
 @media (min-width: 720px) {
   .image-grid {
     margin-left: 10%;
