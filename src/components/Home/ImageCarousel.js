@@ -15,7 +15,31 @@ TODO: Fixe størrelsen med 3 bilder problemet
 */
 class ImageCarousel extends Component {
   mixins: [Carousel.ControllerMixin]
+
   render(){
+
+    /* number of pictures to show in the carousel */
+    function getWidth() {
+      if (self.innerWidth) {
+        return self.innerWidth;
+      }
+      if (document.documentElement && document.documentElement.clientWidth) {
+        return document.documentElement.clientWidth;
+      }
+      if (document.body) {
+        return document.body.clientWidth;
+      }
+    }
+    var screenWidth = getWidth();
+    var numberOfPictures = 1
+    if(screenWidth > 1200){
+      numberOfPictures = 3
+    }else if(screenWidth > 767){
+      numberOfPictures = 2
+    }else{
+      numberOfPictures = 1
+    }
+
 
     var Decorators = [{
       component: React.createClass({
@@ -51,14 +75,14 @@ class ImageCarousel extends Component {
       <Carousel
         autoplay={true}
         initialSlideHeight={640}
-        slidesToShow={3}
+        slidesToShow={numberOfPictures}
         wrapAround={true}
         cellSpacing={20}
-        autoplayInterval={2500}
+        autoplayInterval={3000}
         decorators={Decorators}>
-        <img src={bil} alt="bil dekor" />
+        <img src={bil} onLoad={() => {window.dispatchEvent(new Event('resize'));}} alt="bil dekor" />
         <img src={liteskilt} alt="småskilt" />
-        <img src={cutout} alt="utkuttet skilt" />
+        <img src ={cutout} alt="utkuttet skilt" />
         <img src={folie} alt="heldekkende folie" />
         <img src={lys} alt="skilt med lys" />
         <img src={flagg} alt="flagg og bannere" />

@@ -14,7 +14,27 @@ class Images extends Component {
     this.state = {
       nexturl: 'https://api.instagram.com/v1/users/3017821590/media/recent?access_token=3017821590.1677ed0.21c3cbc98fc1494e822ae09f6009a3ac&count=12',
       images: [],
-      hasMoreImages: true
+      hasMoreImages: true,
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll.bind(this))
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll.bind(this))
+  }
+
+  handleScroll(event) {
+    let st = event.srcElement.body.scrollTop
+
+    if(st > 1000){
+      $('.up-to-top').css("display","block");
+      $('.up-to-top').removeClass("slideOutRight");
+      $('.up-to-top').addClass("slideInRight");
+    }else if(st < 400){
+      $('.up-to-top').addClass("slideOutRight");
     }
   }
 
@@ -42,7 +62,6 @@ class Images extends Component {
     Scroll.animateScroll.scrollToTop()
   }
 
-
   render() {
     var images = []
     for (var i = 0; i < this.state.images.length; i++) {
@@ -51,7 +70,7 @@ class Images extends Component {
 
     return (
       <div className="images">
-        <div className="image-grid">
+        <div className="image-grid slideInUp animated">
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadImages.bind(this)}
@@ -60,7 +79,7 @@ class Images extends Component {
             {images}
           </InfiniteScroll>
         </div>
-        <i className="fa fa-3x fa-chevron-up up-to-top" aria-hidden="true" onClick={this.toTop.bind(this)}></i>
+        <div className="up-to-top animated"><i className="fa fa-3x fa-chevron-up" aria-hidden="true" onClick={this.toTop.bind(this)}></i></div>
       </div>
     );
   }

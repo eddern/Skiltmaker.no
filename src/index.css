@@ -54,22 +54,25 @@ body {
 }
 
 .up-to-top {
+  display: none;
+  background-color: white;
   position: fixed;
-  right: 30px;
-  bottom: 50px;
+  right: 0px;
+  bottom: 60px;
+  padding: 5px 30px 10px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
 }
 .up-to-top:hover {
   cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
 /*
     CAROUSEL
 */
-.slider  {
-  display: none !important;
-}
-
 .carousel-btn{
   background-color: rgba(0,0,0,0.5);
   border: none;
@@ -78,10 +81,6 @@ body {
 
 .carousel-btn:focus{
   outline: none;
-}
-
-.slider-list {
-  height: 460px !important;
 }
 
 /*
@@ -134,6 +133,9 @@ footer{
 /*
       NAVBAR
 */
+.icon-bar{
+  background-color: #AE2310 !important;
+}
 .navbar {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -188,7 +190,7 @@ footer{
 /*
       MEDIA QUERIES
 */
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .image-grid {
     margin-left: 10%;
     margin-right: 10%;
@@ -196,9 +198,6 @@ footer{
   .home-text {
     margin-left: 25%;
     margin-right: 25%;
-  }
-  .slider {
-    display: block !important;
   }
   .logo {
     margin: 5px;

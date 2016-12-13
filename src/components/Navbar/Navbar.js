@@ -4,7 +4,6 @@ import Logo from './logo.png'
 
 class Navbar extends Component {
   render() {
-    console.log(location.pathname)
     return (
       <nav className="navbar navbar-default">
         <div className="container-fluid">
@@ -20,9 +19,9 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li data-toggle="collapse" data-target=".navbar-collapse" className={location.pathname == '/' ? 'active' : ''}><Link to="/">Hjem</Link></li>
-              <li data-toggle="collapse" data-target=".navbar-collapse" className={location.pathname == '/galleri' ? 'active' : ''}><Link to="/galleri">Galleri</Link></li>
-              <li data-toggle="collapse" data-target=".navbar-collapse" className={location.pathname == '/kontakt' ? 'active' : ''}><Link to="/kontakt">Kontakt</Link></li>
+              <li className={location.pathname == '/' ? 'active' : ''}><Link to="/">Hjem</Link></li>
+              <li className={location.pathname == '/galleri' ? 'active' : ''}><Link to="/galleri">Galleri</Link></li>
+              <li className={location.pathname == '/kontakt' ? 'active' : ''}><Link to="/kontakt">Kontakt</Link></li>
             </ul>
           </div>
         </div>
