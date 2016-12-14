@@ -81,17 +81,23 @@ body {
 */
 
 .spinner {
-  margin-top: 20px;
   display: block;
-  margin-left: 48.5%;
+  width: 54px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .spinner > div {
   background-color: #AE2310 !important;
 }
 
-.hidden {
-  display: none;
+.check {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  color: #4caf50;
 }
+
 
 
 /*

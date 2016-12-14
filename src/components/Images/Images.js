@@ -80,7 +80,8 @@ class Images extends Component {
           </InfiniteScroll>
         </div>
         {this.state.hasMoreImages && <Spinner spinnerName='three-bounce' />}
-        <div className="up-to-top animated"><i className="fa fa-3x fa-chevron-up" aria-hidden="true" onClick={this.toTop.bind(this)}></i></div>
+        {!this.state.hasMoreImages && <i className="fa fa-4x fa-check  check" aria-hidden="true"/>}
+        <div className="up-to-top animated" onClick={this.toTop.bind(this)}><i className="fa fa-3x fa-chevron-up" aria-hidden="true"></i></div>
       </div>
     );
   }
