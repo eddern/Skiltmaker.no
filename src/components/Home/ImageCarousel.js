@@ -78,14 +78,32 @@ class ImageCarousel extends Component {
         slidesToShow={numberOfPictures}
         wrapAround={true}
         cellSpacing={20}
-        autoplayInterval={3000}
+        autoplayInterval={2500}
         decorators={Decorators}>
-        <img src={bil} onLoad={() => {window.dispatchEvent(new Event('resize'));}} alt="bil dekor" />
-        <img src={liteskilt} alt="småskilt" />
-        <img src ={cutout} alt="utkuttet skilt" />
-        <img src={folie} alt="heldekkende folie" />
-        <img src={lys} alt="skilt med lys" />
-        <img src={flagg} alt="flagg og bannere" />
+        <div>
+          <img src={bil} onLoad={() => {window.dispatchEvent(new Event('resize'));}} alt="bildekor" />
+          <h1 className="carousel-text">Bil-dekor</h1>
+        </div>
+        <div>
+          <img src={liteskilt} alt="småskilt" />
+          <h1 className="carousel-text">Småskilt</h1>
+        </div>
+        <div>
+          <img src ={cutout} alt="utkuttet skilt" />
+          <h1 className="carousel-text">Utkuttet stål</h1>
+        </div>
+        <div>
+          <img src={folie} alt="heldekkende folie" />
+          <h1 className="carousel-text">Heldekkende folie</h1>
+        </div>
+        <div>
+          <img src={lys} alt="skilt med lys" />
+          <h1 className="carousel-text">Lysskilt</h1>
+        </div>
+        <div>
+          <img src={flagg} alt="flagg og bannere" />
+          <h1 className="carousel-text">Flagg og bannere</h1>
+        </div>
       </Carousel>
     )
   }
