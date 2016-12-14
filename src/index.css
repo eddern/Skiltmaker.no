@@ -76,6 +76,23 @@ body {
   box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+/*
+   LOADER
+*/
+
+.spinner {
+  margin-top: 20px;
+  display: block;
+  margin-left: 48.5%;
+}
+.spinner > div {
+  background-color: #AE2310 !important;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /*
     CAROUSEL

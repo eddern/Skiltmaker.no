@@ -3,9 +3,9 @@ import Image from './Image'
 import $ from 'jquery'
 import InfiniteScroll from "react-infinite-scroller"
 import Scroll from 'react-scroll'
-
+var Spinner = require('react-spinkit');
 /*
-TODO: Legg til placeholder bilde
+TODO: 2 bilder på pad
 */
 class Images extends Component {
 
@@ -40,7 +40,7 @@ class Images extends Component {
 
   loadImages(){
     if(this.state.nexturl == null){
-      this.state.hasMoreImages = false
+      this.setState({hasMoreImages: false})
     }else{
       $.ajax({
         url: this.state.nexturl,
@@ -79,6 +79,7 @@ class Images extends Component {
             {images}
           </InfiniteScroll>
         </div>
+        {this.state.hasMoreImages && <Spinner spinnerName='three-bounce' />}
         <div className="up-to-top animated"><i className="fa fa-3x fa-chevron-up" aria-hidden="true" onClick={this.toTop.bind(this)}></i></div>
       </div>
     );
