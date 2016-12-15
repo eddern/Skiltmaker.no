@@ -8,23 +8,19 @@ import folie from './slideshow/folie.jpg'
 import liteskilt from './slideshow/liteskilt.jpg'
 import lys from './slideshow/lys.jpg'
 
-
-/*
-TODO: Legg til text på bilder
-TODO: Fixe størrelsen med 3 bilder problemet
-*/
 class ImageCarousel extends Component {
   constructor(){
     super()
-    this.state = {numbImages : 1}
+    this.state={numbImages: this.getNumbPics() }
     window.onresize = this.adaptScreenWidth.bind(this)
   }
 
+  componentDidMount(){
+    this.adaptScreenWidth.bind(this)
+  }
 
-
-
-  adaptScreenWidth(){
-    let width = 500;
+  getNumbPics(){
+    let width;
     if (self.innerWidth) {
       width = self.innerWidth;
     }
@@ -34,14 +30,18 @@ class ImageCarousel extends Component {
     else if (document.body) {
       width = document.body.clientWidth;
     }
-    if(width > 1200){
-      this.setState({numbImages: 3})
-    }else if(width > 600){
-      this.setState({numbImages: 2})
-    }else{
-      this.setState({numbImages: 1})
-    }
 
+    if(width > 1200){
+      return 3
+    }else if(width > 600){
+      return 2
+    }else{
+      return 1
+    }
+  }
+
+  adaptScreenWidth(){
+    this.setState({numbImages: this.getNumbPics()})
   }
 
   mixins: [Carousel.ControllerMixin]
