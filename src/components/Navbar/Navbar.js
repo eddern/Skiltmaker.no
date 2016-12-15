@@ -14,14 +14,14 @@ class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link to="/"><img className="logo" src={Logo} /></Link>
+            <Link to="/"><img className="logo" alt="logo" src={Logo} /></Link>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname == '/' ? 'active' : ''}><Link to="/">Hjem</Link></li>
-              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname == '/galleri' ? 'active' : ''}><Link to="/galleri">Galleri</Link></li>
-              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname == '/kontakt' ? 'active' : ''}><Link to="/kontakt">Kontakt</Link></li>
+              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname === '/' ? 'active' : ''}><Link to="/">Hjem</Link></li>
+              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname === '/galleri' ? 'active' : ''}><Link to="/galleri">Galleri</Link></li>
+              <li data-toggle="collapse" data-target=".navbar-collapse.in" className={location.pathname === '/kontakt' ? 'active' : ''}><Link to="/kontakt">Kontakt</Link></li>
             </ul>
           </div>
         </div>

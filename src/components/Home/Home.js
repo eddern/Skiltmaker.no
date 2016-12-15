@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ImageCarousel from './ImageCarousel'
 import { Link, browserHistory } from "react-router"
-import Image from "../Images/Image"
 
 class Home extends Component {
 

@@ -100,7 +100,7 @@ class ImageCarousel extends Component {
           <h1 className="carousel-text">Småskilt</h1>
         </div>
         <div>
-          <img src ={cutout} alt="utkuttet skilt" />
+          <img src={cutout} alt="utkuttet stålskilt" />
           <h1 className="carousel-text">Utkuttet stål</h1>
         </div>
         <div>

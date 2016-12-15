@@ -50,7 +50,7 @@ class Images extends Component {
           showImageCount={false}
         />
         <div className="image-wrapper">
-          <img src={this.state.url}/>
+          <img src={this.state.url} alt="instagram foto"/>
         </div>
         <p className="time">{moment.unix(this.state.time).fromNow()}</p>
       </div>
