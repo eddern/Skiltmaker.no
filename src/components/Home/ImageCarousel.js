@@ -19,6 +19,10 @@ class ImageCarousel extends Component {
     this.adaptScreenWidth.bind(this)
   }
 
+  componentWillUnmount(){
+    window.onresize = null
+  }
+
   getNumbPics(){
     let width;
     if (self.innerWidth) {

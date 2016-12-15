@@ -135,6 +135,10 @@ footer{
   font-size: 1.5em;
 }
 
+.copyright-text{
+  padding-top: 2px;
+}
+
 
 
 /*
@@ -257,7 +261,7 @@ footer{
   }
 }
 /* Sync icon with bootstrap media proc */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .logo {
     margin: 5px;
     height: 70px;
