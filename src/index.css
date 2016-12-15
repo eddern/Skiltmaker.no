@@ -147,7 +147,7 @@ footer{
 .contact {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .contact  h1 {
@@ -155,14 +155,22 @@ footer{
 }
 
 
-.contact > table {
+.contact table {
   font-size: 1.5em;
 }
 
-.contact > table  td {
-  padding: 20px;
-  padding-top: 0px;
+.contact table  td {
+  padding: 0 0 20px 0;
 }
+
+.contact .contact-icon{
+  width: 50px;
+}
+.contact .contact-label{
+  width: 100px;
+}
+
+
 
 
 
@@ -255,15 +263,19 @@ footer{
     margin-left: 25%;
     margin-right: 25%;
   }
-
-  .contact > table {
-    font-size: 2em;
-  }
 }
+
 /* Sync icon with bootstrap media proc */
 @media (min-width: 600px) {
   .logo {
     margin: 5px;
     height: 70px;
+  }
+
+  .contact > table {
+    font-size: 2em;
+  }
+  .contact .contact-label{
+    width: 135px;
   }
 }
