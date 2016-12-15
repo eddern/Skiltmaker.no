@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
 import ImageCarousel from './ImageCarousel'
-import { Link } from "react-router"
+import { Link, browserHistory } from "react-router"
 import Image from "../Images/Image"
 
 class Home extends Component {
+
+  componentWillMount() {
+    if ('g' in this.props.location.query) {
+      browserHistory.push('/galleri')
+    } else if ('k' in this.props.location.query) {
+      browserHistory.push('/kontakt')
+    }
+  }
+
+
   render() {
     return (
       <div className="App">
