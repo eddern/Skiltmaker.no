@@ -6,9 +6,9 @@ import Image from "../Images/Image"
 class Home extends Component {
 
   componentWillMount() {
-    if ('g' in this.props.location.query) {
+    if ('galleri' in this.props.location.query) {
       browserHistory.push('/galleri')
-    } else if ('k' in this.props.location.query) {
+    } else if ('kontakt' in this.props.location.query) {
       browserHistory.push('/kontakt')
     }
   }
