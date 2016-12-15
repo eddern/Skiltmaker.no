@@ -14,32 +14,39 @@ TODO: Legg til text på bilder
 TODO: Fixe størrelsen med 3 bilder problemet
 */
 class ImageCarousel extends Component {
+  constructor(){
+    super()
+    this.state = {numbImages : 1}
+    window.onresize = this.adaptScreenWidth.bind(this)
+  }
+
+
+
+
+  adaptScreenWidth(){
+    let width = 500;
+    if (self.innerWidth) {
+      width = self.innerWidth;
+    }
+    else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    }
+    else if (document.body) {
+      width = document.body.clientWidth;
+    }
+    if(width > 1200){
+      this.setState({numbImages: 3})
+    }else if(width > 600){
+      this.setState({numbImages: 2})
+    }else{
+      this.setState({numbImages: 1})
+    }
+
+  }
+
   mixins: [Carousel.ControllerMixin]
 
   render(){
-
-    /* number of pictures to show in the carousel */
-    function getWidth() {
-      if (self.innerWidth) {
-        return self.innerWidth;
-      }
-      if (document.documentElement && document.documentElement.clientWidth) {
-        return document.documentElement.clientWidth;
-      }
-      if (document.body) {
-        return document.body.clientWidth;
-      }
-    }
-    var screenWidth = getWidth();
-    var numberOfPictures = 1
-    if(screenWidth > 1200){
-      numberOfPictures = 3
-    }else if(screenWidth > 767){
-      numberOfPictures = 2
-    }else{
-      numberOfPictures = 1
-    }
-
 
     var Decorators = [{
       component: React.createClass({
@@ -75,7 +82,7 @@ class ImageCarousel extends Component {
       <Carousel
         autoplay={true}
         initialSlideHeight={640}
-        slidesToShow={numberOfPictures}
+        slidesToShow={this.state.numbImages}
         wrapAround={true}
         cellSpacing={20}
         autoplayInterval={2500}
