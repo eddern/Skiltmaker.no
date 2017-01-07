@@ -226,6 +226,13 @@ footer{
   height: 30px;
 }
 
+#pompel{
+  font-size: 148%;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
 /*
       HOME PAGE
 */
@@ -233,6 +240,8 @@ footer{
   margin-left: 5px;
   margin-right: 5px;
   padding-bottom: 90px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .home-text > h1 {
@@ -270,6 +279,10 @@ footer{
   .logo {
     margin: 5px;
     height: 70px;
+  }
+  .home-text {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .contact > table {
