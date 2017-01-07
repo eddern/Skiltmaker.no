@@ -61,6 +61,7 @@ body {
 }
 
 .up-to-top {
+  z-index: 1;
   display: none;
   background-color: white;
   position: fixed;
@@ -107,12 +108,29 @@ body {
 .carousel-btn{
   background-color: rgba(0,0,0,0.5);
   border: none;
-  padding: 15px;
+  padding: 10px 20px 10px 20px;
 }
 
 .carousel-btn:focus{
   outline: none;
 }
+
+.slider-slide > div > img{
+  width: 100%;
+}
+
+.carousel-text {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 21px 35px 21px 35px;
+  position: absolute;
+  font-weight: 80;
+  bottom: 10px;
+  margin: 0;
+  left: 0px;
+}
+
+
 
 /*
     FOOTER
@@ -171,9 +189,6 @@ footer{
 }
 
 
-
-
-
 /*
       NAVBAR
 */
@@ -217,7 +232,7 @@ footer{
 .home-text {
   margin-left: 5px;
   margin-right: 5px;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
 }
 
 .home-text > h1 {
@@ -231,21 +246,6 @@ footer{
 .home-text > p {
   margin-top: 30px;
   font-size: 110%;
-}
-
-.slider-slide > div > img{
-  width: 100%;
-}
-
-.carousel-text {
-  color: white;
-  background-color: rgba(0,0,0,0.5);
-  padding: 30px 35px 30px 35px;
-  position: absolute;
-  font-weight: 80;
-  bottom: 10px;
-  margin: 0;
-  left: 0px;
 }
 
 
