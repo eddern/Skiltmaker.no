@@ -19,7 +19,17 @@ class Images extends Component {
   }
 
   componentDidMount(){
+    /* Commented out because of IE doesnt support it...
+
     window.addEventListener('scroll', this.handleScroll.bind(this))
+
+    Instead it got replaced with this beauty: */
+    var event = document.createEvent('Event')
+    event.initEvent('scroll', true, true)
+    var that = this
+    window.addEventListener('scroll', function (e) {
+      that.handleScroll(e)
+    }, false)
   }
 
   componentWillUnmount(){
@@ -27,14 +37,14 @@ class Images extends Component {
   }
 
   handleScroll(event) {
-    let st = event.srcElement.body.scrollTop
+    let st = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop
 
     if(st > 1000){
-      $('.up-to-top').css("display","block");
-      $('.up-to-top').removeClass("slideOutRight");
-      $('.up-to-top').addClass("slideInRight");
+      $('.up-to-top').css("display","block")
+      $('.up-to-top').removeClass("slideOutRight")
+      $('.up-to-top').addClass("slideInRight")
     }else if(st < 400){
-      $('.up-to-top').addClass("slideOutRight");
+      $('.up-to-top').addClass("slideOutRight")
     }
   }
 

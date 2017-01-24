@@ -92,7 +92,12 @@ class ImageCarousel extends Component {
         autoplayInterval={2500}
         decorators={Decorators}>
         <div>
-          <img src={bil} onLoad={() => {window.dispatchEvent(new Event('resize'));}} alt="bildekor" />
+          <img src={bil} onLoad={() => {
+              //window.dispatchEvent(new Event('resize'));
+              var event = document.createEvent('Event');
+              event.initEvent('resize', true, true);
+              window.dispatchEvent(event);
+              }} alt="bildekor" />
           <h1 className="carousel-text">Bil-dekor</h1>
         </div>
         <div>
