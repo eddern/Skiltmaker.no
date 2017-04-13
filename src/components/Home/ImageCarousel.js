@@ -97,7 +97,7 @@ class ImageCarousel extends Component {
               var event = document.createEvent('Event');
               event.initEvent('resize', true, true);
               window.dispatchEvent(event);
-              }} alt="bildekor" />
+            }} alt="bildekor" />
           <h1 className="carousel-text">Bil-dekor</h1>
         </div>
         <div>
