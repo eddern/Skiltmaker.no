@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router"
-import Logo from './logo.png'
+import Logo from './logo.jpg'
 
 class Navbar extends Component {
   render() {

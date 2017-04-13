@@ -18,24 +18,27 @@ class Home extends Component {
       <div className="App">
         <ImageCarousel />
         <div className="home-text">
-          <h1>Skilt og dekor</h1>
-          <h2>mer enn du tror!</h2>
-          <p>
-            Skiltmaker Sjøblom har produsert skilt og dekor av høy kvalitet i over 20 år!
-            Over denne perioden har jeg opparbeidet meg erfaring med alle typer skilt.
-            Om du skal dekorere siden av en båt eller industribygget ditt trenger nytt
-            skilt på 50 m2 så kan jeg hjelpe deg! Dersom du er ute etter inspirasjon kan
-            du ta en titt på <Link to="/galleri">galleriet</Link> mitt. Der finner du et stort
-            utvalg over ting jeg har laget.
-            <br/><br/>
-            Ta gjerne kontakt for en hyggelig prat hvis du lurer på noe. Kontaktinformasjon finner
-            du <Link to="/kontakt">her.</Link>
+          <h1>Skilt & dekor - mer enn du tror</h1>
+          <h2><i>Skiltmaker Sjøblom har produsert skilt og dekor i over 25 år.</i></h2>
+          <p>Skilt er den nye oljen!</p>
+          <p>-Neida, men profilering er en viktig del av kommunikasjonen i samfunnet.
+            Vi står i første linje sammen med næringsliv og offentlige institusjoner
+            i kampen om å få frem budskap, enten det er hva som er hvor,
+            eller hvor som er best <i className="fa fa-smile-o" aria-hidden="true"></i>
+          </p>
 
+          <p>Mye av identiteten til bedrifter vises frem i skiltingen. Det er viktig med et godt førsteinntrykk,
+            nettopp det har vi skapt sammen med designere og arkitekter i mange år. Eksempler på dette ser du i mitt <Link to="/galleri">galleri</Link>.
+            <br />
+            Nye jobber legges stadig til.
+          </p>
+          <p>
+            Ta kontakt for en prat, sammen finner vi gode løsninger.
           </p>
         </div>
       </div>
     );
   }
 }
-
+/* <Link to="/kontakt">her.</Link> */
 export default Home

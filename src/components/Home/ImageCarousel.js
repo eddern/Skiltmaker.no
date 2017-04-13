@@ -7,6 +7,7 @@ import flagg from './slideshow/flagg.jpg'
 import folie from './slideshow/folie.jpg'
 import liteskilt from './slideshow/liteskilt.jpg'
 import lys from './slideshow/lys.jpg'
+import kunst from './slideshow/kunst.jpg'
 
 class ImageCarousel extends Component {
   constructor(){
@@ -89,7 +90,7 @@ class ImageCarousel extends Component {
         slidesToShow={this.state.numbImages}
         wrapAround={true}
         cellSpacing={20}
-        autoplayInterval={2500}
+        autoplayInterval={3500}
         decorators={Decorators}>
         <div>
           <img src={bil} onLoad={() => {
@@ -105,8 +106,8 @@ class ImageCarousel extends Component {
           <h1 className="carousel-text">Småskilt</h1>
         </div>
         <div>
-          <img src={cutout} alt="utkuttet stålskilt" />
-          <h1 className="carousel-text">Utkuttet stål</h1>
+          <img src={cutout} alt="utfrest PVC" />
+          <h1 className="carousel-text">Utfrest PVC</h1>
         </div>
         <div>
           <img src={folie} alt="heldekkende folie" />
@@ -119,6 +120,10 @@ class ImageCarousel extends Component {
         <div>
           <img src={flagg} alt="flagg og bannere" />
           <h1 className="carousel-text">Flagg og bannere</h1>
+        </div>
+        <div>
+          <img src={kunst} alt="kunst" />
+          <h1 className="carousel-text">Kunst</h1>
         </div>
       </Carousel>
     )

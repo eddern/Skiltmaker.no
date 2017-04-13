@@ -20,11 +20,6 @@ class Contact extends Component {
               <td><a href="tel:+4722490606">+47 22 49 06 06</a></td>
             </tr>
             <tr>
-              <td className="contact-icon"><i className="fa fa-fax" aria-hidden="true"></i></td>
-              <td className="contact-label">Fax:</td>
-              <td><a href="fax:+4722920602">+47 22 92 06 02</a></td>
-            </tr>
-            <tr>
               <td className="contact-icon"><i className="fa fa-at" aria-hidden="true"></i></td>
               <td className="contact-label">E-post:</td>
               <td><a href="mailto:post@skiltmaker.no">post@skiltmaker.no</a></td>

@@ -239,22 +239,19 @@ footer{
 .home-text {
   margin-left: 5px;
   margin-right: 5px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .home-text > h1 {
-  font-size: 400%;
+  font-size: 300%;
 }
 
-.home-text > h2 {
-  margin-top: -30px;
-}
 
 .home-text > p {
-  margin-top: 30px;
-  font-size: 110%;
+  margin-top: 20px;
+  font-size: 130%;
 }
 
 
