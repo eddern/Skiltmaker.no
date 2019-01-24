@@ -38,10 +38,12 @@ body {
 }
 .image img {
   width: 320px;
-
 }
 
 .image-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
   height: 320px;
   background-image: url('loading-img.png');
 }
